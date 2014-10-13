@@ -1,0 +1,13 @@
+{
+    "name": "vendor/bank",
+    "authors": [
+        {
+            "name": "oleggai",
+            "email": "oleggaidaienko@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": ["classes/", "libs/", "interfaces/"]
+    }
+}
