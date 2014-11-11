@@ -8,11 +8,13 @@ $baseDir = dirname($vendorDir);
 return array(
     'Application' => $baseDir . '/libs/Application.php',
     'CURL' => $baseDir . '/libs/CURL.php',
+    'Calculate' => $baseDir . '/libs/Calculate.php',
     'Connection' => $baseDir . '/libs/Ñonnection.php',
-    'CurrencyInfo' => $baseDir . '/classes/CurrencyInfo.php',
     'CurrencyInfoDAO' => $baseDir . '/classes/CurrencyInfoDAO.php',
     'CurrencyInfoDAOInterface' => $baseDir . '/interfaces/CurrencyInfoDAOInterface.php',
     'CurrencyInfoService' => $baseDir . '/classes/CurrencyInfoService.php',
+    'DailyCurrencyInfo' => $baseDir . '/classes/DailyCurrencyInfo.php',
+    'HourlyCurrencyInfo' => $baseDir . '/classes/HourlyCurrencyInfo.php',
     'Parser' => $baseDir . '/libs/Parser.php',
     'Service' => $baseDir . '/interfaces/Service.php',
 );

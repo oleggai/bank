@@ -23,6 +23,7 @@ final class Connection {
     public static function getConnection(){
         if(self::$conn === null){
             self::$conn = self::connect();
+            self::$conn->exec("set names utf8");
         }
 
         return self::$conn;

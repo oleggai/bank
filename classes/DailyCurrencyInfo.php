@@ -2,22 +2,21 @@
 /**
  * Created by PhpStorm.
  * User: олег
- * Date: 09.10.14
- * Time: 16:58
+ * Date: 13.10.14
+ * Time: 15:17
  */
 
-class CurrencyInfo {
-
+class DailyCurrencyInfo {
     private $id        = null;
     private $currency  = null;
     private $bank      = null;
+    private $nameBank  = null;
     private $ask       = null;
     private $askChange = null;
     private $bid       = null;
     private $bidChange = null;
     private $updated   = null;
-
-    public function __construct() {}
+    private $datetime  = null;
 
     /**
      * @param null $ask
@@ -66,7 +65,21 @@ class CurrencyInfo {
     {
         return $this->bank;
     }
+    /**
+     * @param null $nameBank
+     */
+    public function setNameBank($nameBank)
+    {
+        $this->nameBank = $nameBank;
+    }
 
+    /**
+     * @return null
+     */
+    public function getNameBank()
+    {
+        return $this->nameBank;
+    }
     /**
      * @param null $bid
      */
@@ -146,4 +159,22 @@ class CurrencyInfo {
     {
         return $this->updated;
     }
+
+
+    /**
+     * @param null $datetime
+     */
+    public function setDatetime($datetime)
+    {
+        $this->datetime = $datetime;
+    }
+
+    /**
+     * @return Date
+     */
+    public function getDatetime()
+    {
+        return $this->datetime;
+    }
+
 }
